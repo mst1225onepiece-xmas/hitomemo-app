@@ -1,7 +1,7 @@
 ﻿:root { color: #2f2a24; background: #f7f3ed; font-family: "Yu Gothic UI", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif; line-height: 1.6; font-weight: 400; }
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: #f7f3ed; }
-button, input, textarea { font: inherit; }
+button, input, textarea, select { font: inherit; }
 button { cursor: pointer; }
 .app-shell { max-width: 820px; min-height: 100vh; margin: 0 auto; padding: 18px 16px 104px; }
 .topbar { display: flex; align-items: center; justify-content: space-between; padding: 8px 0 16px; }
@@ -20,12 +20,12 @@ h2 { margin: 0 0 14px; font-size: 1.14rem; }
 .field span { font-weight: 700; }
 .field b { color: #a84d3f; font-size: 0.8rem; }
 .field small { color: #76685f; }
-input, textarea { width: 100%; border: 1px solid #d8cec2; border-radius: 8px; background: #fff; color: #2f2a24; padding: 12px; min-height: 46px; }
+input, textarea, select { width: 100%; border: 1px solid #d8cec2; border-radius: 8px; background: #fff; color: #2f2a24; padding: 12px; min-height: 46px; }
 textarea { resize: vertical; }
 .textarea-compact { min-height: 44px; max-height: 96px; }
 .textarea-medium { min-height: 96px; max-height: 160px; }
 .textarea-long { min-height: 128px; max-height: 220px; }
-input:focus, textarea:focus { outline: 3px solid #ead7bd; border-color: #a97945; }
+input:focus, textarea:focus, select:focus { outline: 3px solid #ead7bd; border-color: #a97945; }
 .primary, .secondary, .danger, .ghost, .file-button { min-height: 46px; border-radius: 8px; border: 1px solid transparent; padding: 10px 14px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; }
 .primary { width: 100%; background: #6f8f72; color: #fff; }
 .secondary, .file-button { background: #fff; color: #3f4636; border-color: #cfc5b9; }
@@ -89,6 +89,8 @@ input:focus, textarea:focus { outline: 3px solid #ead7bd; border-color: #a97945;
 .collapse-body { padding: 0 16px 16px; }
 .section-help { margin: 0 0 14px; color: #76685f; }
 .two-column-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }
+.two-column-fields .field { margin-bottom: 0; }
+.job-field { display: grid; gap: 10px; }
 .option-field { min-width: 0; }
 .option-grid { display: flex; flex-wrap: wrap; gap: 6px; margin: -4px 0 14px; }
 .option-button { min-height: 34px; border-radius: 999px; border: 1px solid #d8cec2; background: #fff; color: #5c4c3f; padding: 6px 10px; font-size: 0.88rem; }
